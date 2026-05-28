@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class ResponseSystem
+public class ResponseSystem// Handles chatbot responses and topic management
 {
     private Dictionary<string, List<string>> responses;
 
     private Random random = new Random();
 
-    public string LastTopic { get; private set; }
+    public string LastTopic { get; private set; }// Store the last topic for "tell me more" functionality
     public string GetLastTopic()
     {
         return LastTopic;
     }
-    public ResponseSystem()
+    public ResponseSystem() // Constructor initializes all chatbot responses
     {
         responses = new Dictionary<string, List<string>>
         {
@@ -68,7 +68,7 @@ public class ResponseSystem
         };
     }
 
-    public string GetResponse(string input)
+    public string GetResponse(string input)// Generate a response based on user input and manage topics
     {
         input = input.ToLower();
 

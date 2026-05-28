@@ -3,8 +3,8 @@ using System.Windows.Forms;
 
 internal static class Program
 {
-    [STAThread]
-    static void Main()
+    [STAThread]//This is required for Windows Forms applications.
+    static void Main()//The entry point of the application.
     {
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false);
@@ -12,9 +12,5 @@ internal static class Program
     }
 
 
-   // dfghjkjhgfd
-
-    /// <summary>
-    /// The main entry point for the application.
-    /// </summary>
+   
 }

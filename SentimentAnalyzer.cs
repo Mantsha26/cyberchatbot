@@ -8,7 +8,7 @@
 
 public class SentimentAnalyzer
 {
-    public Sentiment Detect(string input)
+    public Sentiment Detect(string input) // Detects sentiment based on keywords in the user's message
     {
         input = input.ToLower();
 

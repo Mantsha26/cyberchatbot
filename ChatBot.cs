@@ -6,7 +6,7 @@ public class ChatBot
 {
     private ResponseSystem responseSystem;
 
-    public ResponseSystem ResponseSystem
+    public ResponseSystem ResponseSystem// Expose the response system for testing purposes
     {
         get { return responseSystem; }
     }
@@ -15,7 +15,7 @@ public class ChatBot
 
     public ChatBot()
     {
-        responseSystem = new ResponseSystem();
+        responseSystem = new ResponseSystem();// Initialize the response system
     }
 
     public string Respond(string message)

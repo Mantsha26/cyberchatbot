@@ -1,4 +1,4 @@
-﻿public class MemoryManager
+﻿public class MemoryManager // This class manages the memory of a user's favourite topic
 {
     private User currentUser;
 
